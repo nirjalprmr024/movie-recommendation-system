@@ -48,3 +48,21 @@ if movie_input:
         st.subheader("Recommended Movies:")
         for rec, score in recommendations:
             st.write(f"✅ {rec} — Similarity Score: {score:.2f}")
+
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        color: #6c757d;
+        font-size: 12px;
+    }
+    </style>
+    <div class="footer">
+        Created by Nirjal Parmar
+    </div>
+    """,
+    unsafe_allow_html=True
+)
